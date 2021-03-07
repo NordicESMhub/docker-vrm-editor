@@ -52,8 +52,6 @@ ENV QT_GRAPHICSSYSTEM="minimal"
 
 RUN sed-patch 's/<application type="normal">/<application type="normal" title="VRM Editor">/' /etc/xdg/openbox/rc.xml
 
-COPY rc.xml /etc/xdg/openbox/rc.xml
-
 # Define mountable directories.
 VOLUME ["/config"]
 VOLUME ["/storage"]
