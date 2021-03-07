@@ -55,3 +55,5 @@ RUN sed-patch 's/<application type="normal">/<application type="normal" title="V
 # Define mountable directories.
 VOLUME ["/config"]
 VOLUME ["/storage"]
+
+WORKDIR /config
